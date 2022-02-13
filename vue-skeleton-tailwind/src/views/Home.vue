@@ -1,11 +1,18 @@
 <template>
     <Page>
-
+        <Suspense>
+            <template #default>
+                <Card/>
+            </template>
+            <template #fallback>
+                <Skeleton/>
+            </template>
+        </Suspense>
     </Page>
 </template>
 
 <script lang='ts'>
-import { defineComponent } from 'vue';
+import { defineComponent,reactive } from 'vue';
 
 
 import Page from '@/components/Page.vue';
@@ -17,6 +24,21 @@ const Home = defineComponent({
         Page,
         Card,
         Skeleton
+    },
+
+    setup(){
+        const state = reactive({
+            loading: true
+        });
+
+        const isLoading = () =>{
+            setTimeout(()=>{
+                state.loading;
+            },200);
+            return state.loading = false;
+        };
+
+        return{ isLoading };
     }
 });
 

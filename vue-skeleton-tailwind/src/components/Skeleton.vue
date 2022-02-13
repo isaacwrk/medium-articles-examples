@@ -1,9 +1,9 @@
 <template>
     <!-- card -->
-    <div class="w-64 bg-white rounded shadow-2xl">
+    <div class="w-72 bg-white rounded shadow-2xl">
 
         <!-- image -->
-        <div class="h-32 bg-gray-200 rounded-tr rounded-tl animate-pulse"></div>
+        <div class="h-48 bg-gray-200 rounded-tr rounded-tl animate-pulse"></div>
 
         <div class="p-5">
             <!-- title -->
