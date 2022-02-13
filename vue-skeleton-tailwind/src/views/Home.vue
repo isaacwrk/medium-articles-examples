@@ -1,5 +1,6 @@
 <template>
 
+  <Page>
   <!-- card -->
   <div class="w-64 bg-white rounded shadow-2xl">
 
@@ -23,17 +24,20 @@
         <div class="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
         <div class="h-4 rounded-sm bg-gray-200 animate-pulse"></div>
       </div>
-
     </div>
+  </div>
+  </Page>
 
-</div>
+
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import Page from '@/components/Page.vue'
 
 @Options({
   components: {
+    Page
   },
 })
 export default class Home extends Vue {}
