@@ -31,24 +31,21 @@ const loadCardData = async() =>{
                 cardTitle: "Tanjiro Kamado",
                 bio:"A jornada de Tanjiro tem como fio principal 2 objetivos: transformar sua irmã novamente em humana e se vingar do demônio que destruiu sua família."
             });
-        },3000);
+        },2500);
     });
 };
 const Card = defineComponent({
 
     async setup(){
         const dataCard = ref(await loadCardData());
-
         return{
             dataCard
         };
     }
-
 });
 
 export default Card;
 </script>
 
 <style>
-
 </style>

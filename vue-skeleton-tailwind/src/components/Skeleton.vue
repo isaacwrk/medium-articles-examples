@@ -11,16 +11,16 @@
 
             <!-- content -->
             <div class="grid grid-cols-4 gap-1">
-                <div class="col-span-3 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
+                <div class="col-span-3 h-5 rounded-sm bg-gray-200 animate-pulse"></div>
                 <div class="h-4 rounded-sm bg-gray-200 animate-pulse"></div>
 
-                <div class="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
+                <div class="col-span-2 h-5 rounded-sm bg-gray-200 animate-pulse"></div>
                 <div class="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
 
                 <div class="h-4 rounded-sm bg-gray-200 animate-pulse"></div>
-                <div class="col-span-3 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
-                <div class="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse"></div>
-                <div class="h-4 rounded-sm bg-gray-200 animate-pulse"></div>
+                <div class="col-span-3 h-5 rounded-sm bg-gray-200 animate-pulse"></div>
+                <div class="col-span-2 h-5 rounded-sm bg-gray-200 animate-pulse"></div>
+                <div class="h-5 rounded-sm bg-gray-200 animate-pulse"></div>
             </div>
         </div>
     </div>
@@ -34,7 +34,6 @@ const Skeleton = defineComponent({
 
 export default Skeleton;
 </script>
-
 <style>
 
 </style>

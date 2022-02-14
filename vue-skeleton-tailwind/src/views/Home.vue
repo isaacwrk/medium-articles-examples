@@ -12,7 +12,7 @@
 </template>
 
 <script lang='ts'>
-import { defineComponent,reactive } from 'vue';
+import { defineComponent } from 'vue';
 
 
 import Page from '@/components/Page.vue';
@@ -24,21 +24,6 @@ const Home = defineComponent({
         Page,
         Card,
         Skeleton
-    },
-
-    setup(){
-        const state = reactive({
-            loading: true
-        });
-
-        const isLoading = () =>{
-            setTimeout(()=>{
-                state.loading;
-            },200);
-            return state.loading = false;
-        };
-
-        return{ isLoading };
     }
 });
 
